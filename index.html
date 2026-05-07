@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Forex Trading</title>
+    <style>
+        /* CSS VARIABLES - Change colors here */
+        :root {
+            --gold: #ffcc00;
+            --success: #00ff88;
+            --dark-bg: #0f172a;
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #020617;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #f8f9fa;
+        }
+
+        .frame {
+            width: 100%;
+            max-width: 480px;
+            height: 600px;
+            position: relative;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* BACKGROUND IMAGE SECTION */
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* REPLACE THE URL BELOW WITH YOUR OWN IMAGE LATER */
+            background-image: url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+
+        /* VIGNETTE OVERLAY (Makes text readable) */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(2, 6, 23, 0.4) 0%, rgba(2, 6, 23, 0.95) 90%);
+            z-index: 2;
+        }
+
+        /* CONTENT WRAPPER */
+        .content {
+            position: relative;
+            z-index: 3;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .badge {
+            align-self: center;
+            background: var(--gold);
+            color: #000;
+            font-weight: 900;
+            font-size: 10px;
+            padding: 5px 12px;
+            border-radius: 4px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            font-size: 15px;
+            color: #94a3b8;
+            margin-bottom: 25px;
+            line-height: 1.4;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-item p {
+            font-size: 9px;
+            text-transform: uppercase;
+            color: var(--success);
+            font-weight: 700;
+            margin-top: 4px;
+        }
+
+        .cta-btn {
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 12px;
+            font-weight: 800;
+            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: block;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.03);
+            background: var(--success);
+        }
+
+        .footer-text {
+            font-size: 11px;
+            margin-top: 20px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="frame">
+        <div class="background-image"></div>
+        <div class="overlay"></div>
+        
+        <div class="content">
+            <div class="badge">Professional Strategy</div>
+            <h1>Turn Capital Into <br>Opportunity</h1>
+            
+            <p class="tagline">Start small, grow smart with guidance built for thinkers. Smarter than betting.</p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span>📈</span>
+                    <p>Returns</p>
+                </div>
+                <div class="stat-item">
+                    <span>🔒</span>
+                    <p>Transparent</p>
+                </div>
+                <div class="stat-item">
+                    <span>⚡</span>
+                    <p>Fast Payout</p>
+                </div>
+            </div>
+
+            <a href="https://jeyjerry11.github.io/Investmentcompany.com/" class="cta-btn">
+                REGISTER TO START
+            </a>
+            
+            <p class="footer-text">Investment range: $500 — $5,000</p>
+        </div>
+    </div>
+
+</body>
+</html>
